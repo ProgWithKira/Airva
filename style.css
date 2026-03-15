@@ -40,7 +40,6 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
 }
-
 h1,
 h2,
 h3,
@@ -1181,7 +1180,7 @@ button {
   font-size: 15px;
   color: #93c5fd;
   opacity: 0.9;
-  margin-bottom: 40px;
+  margin-bottom: 62px;
 }
 
 .results-container {
@@ -1212,6 +1211,7 @@ button {
   isolation: isolate;
   will-change: transform;
   transform: translateZ(0);
+  margin-bottom: 38px;
 }
 
 .results-card::before {
@@ -3336,6 +3336,11 @@ section {
     text-align: center;
   }
 
+  .hero-orbit {
+    position: absolute;
+    top: -50%;
+  }
+
   .features-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -3390,6 +3395,8 @@ section {
   .hero-orbit {
     width: 220px;
     height: 220px;
+    position: absolute;
+    top: -50%;
   }
   .hero-right img {
     width: 240px;
