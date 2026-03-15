@@ -3570,3 +3570,101 @@ section {
     letter-spacing: -0.4px;
   }
 }
+/* ═══════════════════════════════════════
+   TABLET RESPONSIVE FIX
+   767px – 1024px range
+   1. Programs: 3 equal cards, no spanning
+   2. Full width sections (no side black bars)
+═══════════════════════════════════════ */
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  /* Full width fix — sabhi sections */
+  body {
+    overflow-x: hidden;
+  }
+
+  .hero,
+  .results,
+  .features-section,
+  .programs-section,
+  .timeline-section,
+  .faculty-section,
+  .testimonials-section,
+  .faq-section,
+  .final-cta-section,
+  .footer,
+  .dna-divider,
+  .dna-divider-2,
+  .dna-divider-3,
+  .dna-divider-4,
+  .dna-divider-5,
+  .dna-divider-6,
+  .dna-divider-7 {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+
+  /* Programs — 3 equal columns, no pc-featured spanning */
+  .programs-container {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 16px;
+    padding: 0 16px;
+  }
+
+  .pc-featured {
+    grid-column: span 1 !important;
+  }
+
+  .program-card {
+    padding: 24px 18px 22px;
+  }
+
+  /* Results — 3 columns on tablet */
+  .results-container {
+    grid-template-columns: repeat(3, 1fr) !important;
+    padding: 0 16px;
+  }
+
+  /* Features — 2 columns on tablet */
+  .features-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 16px;
+  }
+
+  /* Faculty — 2 columns on tablet */
+  .faculty-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 16px;
+  }
+
+  /* Testimonials — 2 columns on tablet */
+  .testi-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 16px;
+  }
+
+  /* Hero container full width */
+  .hero-container {
+    max-width: 100%;
+    padding: 0 24px;
+  }
+
+  /* Footer — 2 columns */
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  /* FAQ container padding */
+  .faq-container {
+    padding: 0 16px;
+  }
+
+  /* Timeline container */
+  .timeline-container {
+    padding: 0 16px;
+  }
+}
