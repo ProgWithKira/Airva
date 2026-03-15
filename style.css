@@ -3571,47 +3571,85 @@ section {
   }
 }
 /* ═══════════════════════════════════════
-   TABLET RESPONSIVE FIX
-   767px – 1024px range
-   1. Programs: 3 equal cards, no spanning
-   2. Full width sections (no side black bars)
+   TABLET FIX — 601px to 1024px
 ═══════════════════════════════════════ */
-
 @media (min-width: 601px) and (max-width: 1024px) {
-  /* Full width fix — sabhi sections */
-  body {
+
+  /* ── Root overflow fix ── */
+  html, body {
     overflow-x: hidden;
+    width: 100%;
   }
 
-  .hero,
-  .results,
-  .features-section,
-  .programs-section,
-  .timeline-section,
-  .faculty-section,
-  .testimonials-section,
-  .faq-section,
-  .final-cta-section,
-  .footer,
-  .dna-divider,
-  .dna-divider-2,
-  .dna-divider-3,
-  .dna-divider-4,
-  .dna-divider-5,
-  .dna-divider-6,
-  .dna-divider-7 {
+  /* ── Hero ── */
+  .hero {
+    padding: 80px 24px 60px;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 48px;
     width: 100%;
     max-width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    box-sizing: border-box;
+    padding: 0;
   }
 
-  /* Programs — 3 equal columns, no pc-featured spanning */
+  .hero-left {
+    width: 100%;
+    max-width: 100%;
+    min-width: unset;
+  }
+
+  .hero-right {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .cta-buttons { justify-content: center; }
+  .features    { justify-content: center; }
+
+  /* Floating cards — inline stacked */
+  .floating-card,
+  .floating-card2,
+  .rank-counter-card {
+    position: relative;
+    top: auto; right: auto; bottom: auto; left: auto;
+    margin: 12px auto 0;
+    max-width: 280px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* ── DNA dividers full width ── */
+  .dna-divider, .dna-divider-2, .dna-divider-3,
+  .dna-divider-4, .dna-divider-5, .dna-divider-6, .dna-divider-7 {
+    width: 100%;
+    height: 150px;
+  }
+
+  /* ── Results — 2 cols on tablet ── */
+  .results-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+    max-width: 100%;
+    padding: 0 8px;
+  }
+
+  /* ── Features — 2 cols ── */
+  .features-container {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    padding: 0 8px;
+  }
+
+  /* ── Programs — 3 equal cols, NO spanning ── */
   .programs-container {
     grid-template-columns: repeat(3, 1fr) !important;
-    gap: 16px;
-    padding: 0 16px;
+    gap: 14px;
+    max-width: 100%;
+    padding: 0 8px;
   }
 
   .pc-featured {
@@ -3619,52 +3657,70 @@ section {
   }
 
   .program-card {
-    padding: 24px 18px 22px;
+    padding: 22px 16px 20px;
   }
 
-  /* Results — 3 columns on tablet */
-  .results-container {
-    grid-template-columns: repeat(3, 1fr) !important;
-    padding: 0 16px;
+  .pc-title    { font-size: 16px; }
+  .pc-desc     { font-size: 13px; }
+  .pc-features li { font-size: 12px; }
+
+  /* ── Timeline ── */
+  .timeline-container {
+    max-width: 100%;
+    padding: 0 8px;
   }
 
-  /* Features — 2 columns on tablet */
-  .features-container {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 0 16px;
-  }
-
-  /* Faculty — 2 columns on tablet */
+  /* ── Faculty — 2 cols ── */
   .faculty-grid {
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 16px;
+    max-width: 100%;
+    padding: 0 8px;
   }
 
-  /* Testimonials — 2 columns on tablet */
+  /* ── Testimonials — 2 cols ── */
   .testi-grid {
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 16px;
-  }
-
-  /* Hero container full width */
-  .hero-container {
     max-width: 100%;
-    padding: 0 24px;
+    padding: 0 8px;
   }
 
-  /* Footer — 2 columns */
+  .testi-stats {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  .testi-stat-divider { display: none; }
+  .testi-stat { flex: 0 0 calc(50% - 10px); }
+
+  /* ── FAQ ── */
+  .faq-container {
+    max-width: 100%;
+    padding: 0 8px;
+  }
+
+  /* ── CTA mini stats ── */
+  .cta-mini-stats {
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 20px;
+    width: 90%;
+  }
+  .cta-mini-sep { display: none; }
+  .cta-mini-stat { flex: 0 0 calc(50% - 8px); }
+
+  /* ── Footer ── */
   .footer-container {
     grid-template-columns: 1fr 1fr;
     gap: 32px;
+    padding: 0 24px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
   }
 
-  /* FAQ container padding */
-  .faq-container {
-    padding: 0 16px;
-  }
-
-  /* Timeline container */
-  .timeline-container {
-    padding: 0 16px;
-  }
+  /* ── Navbar ── */
+  .nav-links li a { font-size: 13px; }
+  .nav-links { gap: 12px; }
 }
