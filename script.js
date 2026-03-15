@@ -1,4 +1,3 @@
-import { Analytics } from "@vercel/analytics/next"
 /* ═══════════════════════════════════════════════════
    AIRVA COACHING — script.js
    Sections:
