@@ -6,9 +6,9 @@
     <title>Airva | JEE NEET Coaching Program 2026-27</title>
     <link rel="icon" href="./Images/favicon/favicon.svg" type="image/x-icon" />
     <link rel="preload" href="./style.css" as="style" />
-    <link rel="stylesheet" href="./style.css?v=2" />
+    <link rel="stylesheet" href="./style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,19 +21,15 @@
   </head>
 
   <body>
+    <!-- ═══════════════════════════════════════
+         NAVBAR
+    ═══════════════════════════════════════ -->
     <header>
-      <nav class="navbar">
-        <!-- LEFT (mobile hamburger) -->
+      <nav class="navbar" id="navbar">
         <div class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span></span><span></span><span></span>
         </div>
-
-        <!-- BRAND -->
         <div class="nav-brand">AIRVA</div>
-
-        <!-- CENTER NAV LINKS -->
         <ul class="nav-links" id="navLinks">
           <li><a href="#hero">Home</a></li>
           <li><a href="#features">Features</a></li>
@@ -44,43 +40,40 @@
           <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#footer">Contact</a></li>
-
-          <!-- MOBILE CTA -->
           <li class="mobile-cta">
             <button class="nav-cta">Book Counseling</button>
           </li>
         </ul>
-
-        <!-- DESKTOP CTA -->
         <button class="nav-cta desktop-cta">Book Counseling</button>
       </nav>
     </header>
+
+    <!-- ═══════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════ -->
     <section class="hero" id="hero">
       <div class="blob blob1" data-speed="40"></div>
       <div class="blob blob2" data-speed="20"></div>
+
       <div class="hero-container">
+        <!-- LEFT -->
         <div class="hero-left">
           <h1>
-            Class <span class="highlight">11</span> &rarr; <br />
+            Class <span class="highlight">11</span> &rarr;<br />
             AIR <span class="highlight">Under 500</span>
           </h1>
-
           <p class="sub">Structured 2-Year JEE/NEET Coaching Program</p>
-
           <div class="cta-buttons">
             <button class="primary">Book Free Counseling</button>
-
             <button class="secondary">Talk on WhatsApp</button>
           </div>
           <p class="trust">Trusted by 1500+ JEE Aspirants Since 2014</p>
-
           <div class="features">
             <ul>
               <li>✓ Personalized doubt support</li>
               <li>✓ Weekly Tests</li>
               <li>✓ Rank-focused Strategy</li>
             </ul>
-
             <ul>
               <li>⭐ 96% JEE Mains Qualification Rate</li>
               <li>⭐ 1200+ IIT/NEET Selections</li>
@@ -89,6 +82,7 @@
           </div>
         </div>
 
+        <!-- RIGHT -->
         <div class="hero-right">
           <div class="hero-orbit">
             <div class="hero-orbit-core"></div>
@@ -100,27 +94,23 @@
             <div class="hero-connection connection-2"></div>
             <div class="hero-connection connection-3"></div>
           </div>
-
           <img
             src="./Images/13474-removebg-preview.webp"
-            alt="trophy"
+            alt="JEE Trophy"
             loading="eager"
             fetchpriority="high"
           />
-
           <div class="hero-metrics">
             <div class="floating-card">
-              ⚡ Avg Rank Boost <br />
+              ⚡ Avg Rank Boost<br />
               <span style="font-size: 18px; font-weight: 800">+1420</span>
             </div>
-
             <div class="floating-card2">
               🏆 AIR 56<br />
               <span style="font-size: 18px; font-weight: 800"
                 >JEE Advanced</span
               >
             </div>
-
             <div class="rank-counter-card">
               <span class="rank-label">Selections This Year</span>
               <span class="rank-number" id="rankCounter">1284</span>
@@ -128,247 +118,133 @@
           </div>
         </div>
       </div>
-      <!-- CLOSE hero-container -->
 
+      <!-- Brand strip -->
       <div class="brand-strip">
         <p class="brand-title">Trusted by students placed in</p>
-
         <div class="marquee">
-          <div class="marquee-content">
-            <img src="./Images/Marquee-icons/iitb.png" />
-            <img src="./Images/Marquee-icons/iitd.png" />
-            <img src="./Images/Marquee-icons/iitkgp.png" />
-            <img src="./Images/Marquee-icons/neet.png" />
-            <img src="./Images/Marquee-icons/neet2.png" />
-
-            <!-- duplicate for infinite loop -->
-            <img src="./Images/Marquee-icons/iitb.png" />
-            <img src="./Images/Marquee-icons/iitd.png" />
-            <img src="./Images/Marquee-icons/iitkgp.png" />
-            <img src="./Images/Marquee-icons/neet.png" />
-            <img src="./Images/Marquee-icons/neet2.png" />
+          <div class="marquee-content" id="marqueeContent">
+            <img src="./Images/Marquee-icons/iitb.png" alt="IIT Bombay" />
+            <img src="./Images/Marquee-icons/iitd.png" alt="IIT Delhi" />
+            <img src="./Images/Marquee-icons/iitkgp.png" alt="IIT KGP" />
+            <img src="./Images/Marquee-icons/neet.png" alt="NEET" />
+            <img src="./Images/Marquee-icons/neet2.png" alt="NEET 2" />
+            <img src="./Images/Marquee-icons/iitb.png" alt="IIT Bombay" />
+            <img src="./Images/Marquee-icons/iitd.png" alt="IIT Delhi" />
+            <img src="./Images/Marquee-icons/iitkgp.png" alt="IIT KGP" />
+            <img src="./Images/Marquee-icons/neet.png" alt="NEET" />
+            <img src="./Images/Marquee-icons/neet2.png" alt="NEET 2" />
           </div>
         </div>
       </div>
-      <div class="mouse-glow"></div>
+
+      <div class="mouse-glow" id="mouseGlow"></div>
     </section>
-    <div class="scroll-indicator">
-      <div class="mouse">
-        <div class="wheel"></div>
-      </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator" id="scrollIndicator">
+      <div class="mouse"><div class="wheel"></div></div>
     </div>
-    <section class="results">
+
+    <!-- ═══════════════════════════════════════
+         RESULTS
+    ═══════════════════════════════════════ -->
+    <section class="results" id="results">
       <h2 class="result-headline">Our Students' Results</h2>
-      <h3 class="result-subhead">
-        Our Students Are Cracking JEE & NEET Every Year.
-      </h3>
-      <h3 class="result-subhead" style="margin-bottom: 70px">
+      <p class="result-subhead">
         Real results from students who trusted our system.
-      </h3>
+      </p>
 
       <div class="results-container">
         <div class="results-card">
           <div class="badge">🏆 AIR 221</div>
-
           <div class="student-photo">
             <img
               src="./Images/result-pics/student1.png"
-              alt="Student1"
+              alt="Rohan Sharma"
               loading="lazy"
             />
           </div>
-
           <h3>Rohan Sharma</h3>
-
           <p class="student-quote">
-            “Weekly testing + doubt support helped me improve massively.”
+            "Weekly testing + doubt support helped me improve massively."
           </p>
         </div>
-
         <div class="results-card">
           <div class="badge">🏆 AIR 102</div>
-
           <div class="student-photo">
             <img
               src="./Images/result-pics/student3.png"
-              alt="Student1"
+              alt="Avika Aggarwal"
               loading="lazy"
             />
           </div>
-
           <h3>Avika Aggarwal</h3>
-
           <p class="student-quote">
-            “Personalized doubt support has been game changer for me.”
+            "Personalized doubt support has been game changer for me."
           </p>
         </div>
-
         <div class="results-card">
           <div class="badge">🏆 AIR 340</div>
-
           <div class="student-photo">
             <img
               src="./Images/result-pics/student2.png"
-              alt="Student1"
+              alt="Om Prakash Mitra"
               loading="lazy"
             />
           </div>
-
           <h3>Om Prakash Mitra</h3>
-
           <p class="student-quote">
-            “Comfortable faculty and teachers were the key to my success.”
+            "Comfortable faculty and teachers were the key to my success."
           </p>
         </div>
-      </div>
-
-      <div class="results-container" style="margin-top: 60px">
         <div class="results-card">
           <div class="badge">🏆 AIR 192</div>
-
           <div class="student-photo">
             <img
               src="./Images/result-pics/student4.png"
-              alt="Student1"
+              alt="Sweta Patel"
               loading="lazy"
             />
           </div>
-
           <h3>Sweta Patel</h3>
-
           <p class="student-quote">
-            “Regular testing and teacher feedback kept me disciplined. It made a
-            big difference in my preparation.”
+            "Regular testing and teacher feedback kept me disciplined."
           </p>
         </div>
-
         <div class="results-card">
           <div class="badge">🏆 AIR 56</div>
-
           <div class="student-photo">
             <img
               src="./Images/result-pics/student5.png"
-              alt="Student1"
+              alt="Akshay Gupta"
               loading="lazy"
             />
           </div>
-
           <h3>Akshay Gupta</h3>
-
           <p class="student-quote">
-            “The weekly tests and detailed analysis really helped me understand
-            where I was losing marks. My scores improved a lot because of that”
+            "Weekly tests showed exactly where I was losing marks."
           </p>
         </div>
-
         <div class="results-card">
           <div class="badge">🏆 AIR 291</div>
-
           <div class="student-photo">
             <img
               src="./Images/result-pics/student6.png"
-              alt="Student1"
+              alt="Manoj Kumar"
               loading="lazy"
             />
           </div>
-
           <h3>Manoj Kumar</h3>
-
           <p class="student-quote">
-            “The doubt sessions were honestly the best part. Even small
-            confusions got cleared quickly, which helped me stay consistent”
+            "Doubt sessions cleared small confusions quickly — stayed
+            consistent."
           </p>
         </div>
       </div>
     </section>
 
-    <div class="dna-divider">
-      <svg viewBox="0 0 1200 200" preserveAspectRatio="none">
-        <path
-          class="wave"
-          d="M0 100 Q150 20 300 100 T600 100 T900 100 T1200 100"
-        />
-        <path
-          class="wave wave2"
-          d="M0 100 Q150 180 300 100 T600 100 T900 100 T1200 100"
-        />
-      </svg>
-    </div>
-    <section class="features-section">
-      <div class="mesh-center"></div>
-      <h2 class="feature-headline">Why Students Choose Us?</h2>
-      <h3
-        class="feature-sub"
-        style="margin-bottom: 50px"
-        style="color: #475569"
-      >
-        Proven system that has helped 1500+ students crack JEE.
-      </h3>
-
-      <div class="features-container">
-        <div class="feature-card fade-up">
-          <div class="icon-box">🎯</div>
-          <div>
-            <h3>Rank Focused Strategy</h3>
-            <p>
-              Clear roadmap designed to take students from Class 11 to AIR under
-              500.
-            </p>
-          </div>
-        </div>
-
-        <div class="feature-card fade-up">
-          <div class="icon-box">📊</div>
-          <div>
-            <h3>Weekly Rank Tests</h3>
-            <p>
-              Track your performance through structured JEE-level test series.
-            </p>
-          </div>
-        </div>
-
-        <div class="feature-card fade-up">
-          <div class="icon-box">👨‍🏫</div>
-          <div>
-            <h3>Personal Mentorship</h3>
-            <p>Direct guidance from experienced IIT/JEE mentors.</p>
-          </div>
-        </div>
-
-        <div class="feature-card fade-up">
-          <div class="icon-box">❓</div>
-          <div>
-            <h3>Doubt Solving</h3>
-            <p>Quick doubt support to ensure concepts stay crystal clear.</p>
-          </div>
-        </div>
-
-        <div class="feature-card fade-up">
-          <div class="icon-box">📚</div>
-          <div>
-            <h3>Structured Curriculum</h3>
-            <p>Step-by-step syllabus coverage aligned with JEE preparation.</p>
-          </div>
-        </div>
-
-        <div class="feature-card fade-up">
-          <div class="icon-box">📈</div>
-          <div>
-            <h3>Performance Analytics</h3>
-            <p>Detailed analysis to track progress and improve weak areas.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================
-     PROGRAM TIMELINE SECTION
-     Paste after .features-section, before </body>
-<!-- ========================
-     PROGRAMS (WHAT) SECTION
-     Paste BEFORE .timeline-section (Programs How)
-     Order: Results → DNA1 → Features → DNA2 → Programs(What) → DNA3 → Timeline(How)
-======================== -->
+    <!-- DNA 1: Hero → Results → Features -->
     <div class="dna-divider-2">
       <svg viewBox="0 0 1200 200" preserveAspectRatio="none">
         <path
@@ -381,6 +257,189 @@
         />
       </svg>
     </div>
+
+    <!-- ═══════════════════════════════════════
+         FEATURES — SVG icons (no emojis)
+    ═══════════════════════════════════════ -->
+    <section class="features-section" id="features">
+      <div class="mesh-center"></div>
+      <h2 class="feature-headline">Why Students Choose Us?</h2>
+      <p class="feature-sub">
+        Proven system that has helped 1500+ students crack JEE.
+      </p>
+
+      <div class="features-container">
+        <!-- Rank Strategy -->
+        <div class="feature-card fade-up">
+          <div class="icon-box">
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <circle cx="12" cy="12" r="3" />
+              <line x1="12" y1="2" x2="12" y2="5" />
+              <line x1="12" y1="19" x2="12" y2="22" />
+              <line x1="2" y1="12" x2="5" y2="12" />
+              <line x1="19" y1="12" x2="22" y2="12" />
+            </svg>
+          </div>
+          <div>
+            <h3>Rank Focused Strategy</h3>
+            <p>
+              Clear roadmap designed to take students from Class 11 to AIR under
+              500.
+            </p>
+          </div>
+        </div>
+
+        <!-- Weekly Tests -->
+        <div class="feature-card fade-up">
+          <div class="icon-box">
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+            </svg>
+          </div>
+          <div>
+            <h3>Weekly Rank Tests</h3>
+            <p>
+              Track your performance through structured JEE-level test series.
+            </p>
+          </div>
+        </div>
+
+        <!-- Personal Mentorship -->
+        <div class="feature-card fade-up">
+          <div class="icon-box">
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+          <div>
+            <h3>Personal Mentorship</h3>
+            <p>Direct guidance from experienced IIT/JEE mentors.</p>
+          </div>
+        </div>
+
+        <!-- Doubt Solving -->
+        <div class="feature-card fade-up">
+          <div class="icon-box">
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+              <line x1="12" y1="17" x2="12.01" y2="17" />
+            </svg>
+          </div>
+          <div>
+            <h3>Doubt Solving</h3>
+            <p>Quick doubt support to ensure concepts stay crystal clear.</p>
+          </div>
+        </div>
+
+        <!-- Structured Curriculum -->
+        <div class="feature-card fade-up">
+          <div class="icon-box">
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+              <path
+                d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+              />
+            </svg>
+          </div>
+          <div>
+            <h3>Structured Curriculum</h3>
+            <p>Step-by-step syllabus coverage aligned with JEE preparation.</p>
+          </div>
+        </div>
+
+        <!-- Performance Analytics -->
+        <div class="feature-card fade-up">
+          <div class="icon-box">
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="18" y1="20" x2="18" y2="10" />
+              <line x1="12" y1="20" x2="12" y2="4" />
+              <line x1="6" y1="20" x2="6" y2="14" />
+            </svg>
+          </div>
+          <div>
+            <h3>Performance Analytics</h3>
+            <p>Detailed analysis to track progress and improve weak areas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DNA 2: Teal → Violet -->
+    <div class="dna-divider-3">
+      <svg viewBox="0 0 1200 200" preserveAspectRatio="none">
+        <path
+          class="wave"
+          d="M0 100 Q150 20 300 100 T600 100 T900 100 T1200 100"
+        />
+        <path
+          class="wave wave2"
+          d="M0 100 Q150 180 300 100 T600 100 T900 100 T1200 100"
+        />
+      </svg>
+    </div>
+
+    <!-- ═══════════════════════════════════════
+         PROGRAMS
+    ═══════════════════════════════════════ -->
     <section class="programs-section" id="programs">
       <div class="programs-header">
         <span class="programs-eyebrow">Our Batches</span>
@@ -394,13 +453,13 @@
       </div>
 
       <div class="programs-container">
-        <!-- Card 1 – Class 11 Foundation -->
+        <!-- Class 11 Foundation -->
         <div class="program-card pc-fade" data-delay="0">
           <div class="pc-top">
             <div class="pc-icon-wrap pc-icon-blue">
               <svg
-                width="28"
-                height="28"
+                width="26"
+                height="26"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -415,14 +474,12 @@
             </div>
             <div class="pc-badge">Most Popular</div>
           </div>
-
           <h3 class="pc-title">Class 11 Foundation</h3>
           <p class="pc-duration">⏱ 2-Year Program</p>
           <p class="pc-desc">
             Build a rock-solid foundation from day one. Concept-first approach
             designed to carry students all the way to AIR under 500.
           </p>
-
           <ul class="pc-features">
             <li>
               <span class="pc-check">✓</span> Concept-first learning framework
@@ -432,17 +489,16 @@
             <li><span class="pc-check">✓</span> Personal progress tracking</li>
             <li><span class="pc-check">✓</span> Mentor-guided study plan</li>
           </ul>
-
           <button class="pc-btn pc-btn-primary">View Details</button>
         </div>
 
-        <!-- Card 2 – Class 12 Target (FEATURED) -->
+        <!-- Class 12 Target (Featured) -->
         <div class="program-card pc-featured pc-fade" data-delay="1">
           <div class="pc-top">
             <div class="pc-icon-wrap pc-icon-pink">
               <svg
-                width="28"
-                height="28"
+                width="26"
+                height="26"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -457,14 +513,12 @@
             </div>
             <div class="pc-badge pc-badge-gold">⭐ Best Results</div>
           </div>
-
           <h3 class="pc-title">Class 12 Target Batch</h3>
           <p class="pc-duration">⏱ 1-Year Intensive</p>
           <p class="pc-desc">
             High-intensity, focused preparation for students appearing in
             JEE/NEET this year. Every week counts.
           </p>
-
           <ul class="pc-features">
             <li><span class="pc-check">✓</span> Advanced problem solving</li>
             <li><span class="pc-check">✓</span> Weekly performance analysis</li>
@@ -474,17 +528,16 @@
               <span class="pc-check">✓</span> Rank-focused revision cycles
             </li>
           </ul>
-
           <button class="pc-btn pc-btn-featured">View Details</button>
         </div>
 
-        <!-- Card 3 – Dropper Batch -->
+        <!-- Dropper Batch -->
         <div class="program-card pc-fade" data-delay="2">
           <div class="pc-top">
             <div class="pc-icon-wrap pc-icon-green">
               <svg
-                width="28"
-                height="28"
+                width="26"
+                height="26"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -498,14 +551,12 @@
             </div>
             <div class="pc-badge">Rank Booster</div>
           </div>
-
           <h3 class="pc-title">Dropper / Repeater Batch</h3>
           <p class="pc-duration">⏱ Full-Year Dedicated</p>
           <p class="pc-desc">
             You've been through it once. Now let's do it right. Intensive prep
             built to fix gaps and maximize rank.
           </p>
-
           <ul class="pc-features">
             <li><span class="pc-check">✓</span> Intensive practice modules</li>
             <li><span class="pc-check">✓</span> Daily doubt clearing</li>
@@ -513,11 +564,9 @@
             <li><span class="pc-check">✓</span> Rank improvement strategy</li>
             <li><span class="pc-check">✓</span> 1-on-1 mentor sessions</li>
           </ul>
-
           <button class="pc-btn pc-btn-primary">View Details</button>
         </div>
       </div>
-      <!-- /programs-container -->
 
       <p class="programs-footnote">
         Not sure which program fits your child best?
@@ -525,7 +574,8 @@
       </p>
     </section>
 
-    <div class="dna-divider-3">
+    <!-- DNA 3: Violet → Green -->
+    <div class="dna-divider">
       <svg viewBox="0 0 1200 200" preserveAspectRatio="none">
         <path
           class="wave"
@@ -538,6 +588,9 @@
       </svg>
     </div>
 
+    <!-- ═══════════════════════════════════════
+         TIMELINE (HOW IT WORKS)
+    ═══════════════════════════════════════ -->
     <section class="timeline-section" id="process">
       <div class="timeline-header">
         <span class="timeline-eyebrow">The Journey</span>
@@ -549,13 +602,11 @@
       </div>
 
       <div class="timeline-container" id="timelineContainer">
-        <!-- vertical line -->
         <div class="timeline-line">
           <div class="timeline-progress" id="timelineProgress"></div>
         </div>
 
-        <!-- Step 1 – LEFT -->
-        <div class="timeline-item tl-left" data-step="1">
+        <div class="timeline-item tl-left">
           <div class="timeline-node">
             <span class="node-number">01</span>
             <div class="node-ring"></div>
@@ -565,15 +616,14 @@
             <h3 class="card-title">Diagnostic Assessment</h3>
             <p class="card-desc">
               We start by identifying the student's strengths and weaknesses
-              through a structured assessment test — so every plan is built on
-              real data, not guesswork.
+              through a structured test — so every plan is built on real data,
+              not guesswork.
             </p>
             <div class="card-tag">Week 1</div>
           </div>
         </div>
 
-        <!-- Step 2 – RIGHT -->
-        <div class="timeline-item tl-right" data-step="2">
+        <div class="timeline-item tl-right">
           <div class="timeline-node">
             <span class="node-number">02</span>
             <div class="node-ring"></div>
@@ -590,33 +640,30 @@
           </div>
         </div>
 
-        <!-- Step 3 – LEFT -->
-        <div class="timeline-item tl-left" data-step="3">
+        <div class="timeline-item tl-left">
           <div class="timeline-node">
             <span class="node-number">03</span>
             <div class="node-ring"></div>
           </div>
           <div class="timeline-card">
             <div class="card-icon">📊</div>
-            <h3 class="card-title">Weekly Tests & Analysis</h3>
+            <h3 class="card-title">Weekly Tests &amp; Analysis</h3>
             <p class="card-desc">
               Students take regular JEE-level tests followed by detailed
-              performance analysis to track improvement, spot patterns, and fix
-              weak zones fast.
+              performance analysis to track improvement and fix weak zones fast.
             </p>
             <div class="card-tag">Ongoing</div>
           </div>
         </div>
 
-        <!-- Step 4 – RIGHT -->
-        <div class="timeline-item tl-right" data-step="4">
+        <div class="timeline-item tl-right">
           <div class="timeline-node">
             <span class="node-number">04</span>
             <div class="node-ring"></div>
           </div>
           <div class="timeline-card">
             <div class="card-icon">🧠</div>
-            <h3 class="card-title">Doubt Clearing & Mentorship</h3>
+            <h3 class="card-title">Doubt Clearing &amp; Mentorship</h3>
             <p class="card-desc">
               Dedicated doubt sessions and mentor guidance ensure no concept
               remains unclear. One-on-one support when it matters most.
@@ -625,8 +672,7 @@
           </div>
         </div>
 
-        <!-- Step 5 – LEFT -->
-        <div class="timeline-item tl-left" data-step="5">
+        <div class="timeline-item tl-left">
           <div class="timeline-node">
             <span class="node-number">05</span>
             <div class="node-ring"></div>
@@ -635,30 +681,22 @@
             <div class="card-icon">🏆</div>
             <h3 class="card-title">Final Exam Strategy</h3>
             <p class="card-desc">
-              Before the exam, students receive targeted revision plans, full
-              mock exams, and proven time management strategies to walk in with
-              maximum confidence.
+              Students receive targeted revision plans, full mock exams, and
+              proven time management strategies to walk in with maximum
+              confidence.
             </p>
             <div class="card-tag">Pre-Exam</div>
           </div>
         </div>
       </div>
-      <!-- /timeline-container -->
 
-      <!-- Bottom CTA -->
       <div class="timeline-cta">
         <p>Ready to start your child's journey?</p>
         <button class="primary tl-cta-btn">Book Free Counseling →</button>
       </div>
     </section>
 
-    <!-- ========================
-     PARENTS TESTIMONIALS SECTION
-     Paste after .timeline-section (dna-divider-4 pehle)
-     Color: Deep midnight navy — circles back to hero energy
-======================== -->
-
-    <!-- DNA DIVIDER 4: Green(Timeline) → Midnight Navy(Testimonials) -->
+    <!-- DNA 4: Green → Slate -->
     <div class="dna-divider-4">
       <svg viewBox="0 0 1200 200" preserveAspectRatio="none">
         <path
@@ -672,6 +710,9 @@
       </svg>
     </div>
 
+    <!-- ═══════════════════════════════════════
+         FACULTY — DiceBear Indian avatars
+    ═══════════════════════════════════════ -->
     <section class="faculty-section" id="faculty">
       <div class="faculty-trust-line">
         <span class="faculty-trust-icon">🎓</span>
@@ -681,95 +722,83 @@
       <div class="faculty-header">
         <h2 class="faculty-title">Meet Our Expert Faculty</h2>
         <p class="faculty-subtitle">
-          Our experienced teachers guide students with strong concepts,
-          structured practice, and personal attention.
+          Our teachers guide students with strong concepts, structured practice,
+          and personal attention.
         </p>
       </div>
 
       <div class="faculty-grid">
-        <!-- Card 1 – Physics -->
+        <!-- Physics — Dr. Arjun Mehta -->
         <div class="faculty-card fc-fade">
           <div class="fc-photo-wrap">
             <img
               class="fc-photo"
-              src="https://randomuser.me/api/portraits/men/41.jpg"
+              src="./Images/teachers/teacher1.png"
               alt="Dr. Arjun Mehta"
             />
-            <div class="fc-hover-overlay">
-              <span>View Profile</span>
-            </div>
+            <div class="fc-hover-overlay"><span>View Profile</span></div>
           </div>
           <div class="fc-body">
             <span class="fc-subject fc-subject-physics">Physics</span>
             <h3 class="fc-name">Dr. Arjun Mehta</h3>
-            <p class="fc-exp">📅 12+ Years Teaching Experience</p>
+            <p class="fc-exp">12+ Years Teaching Experience</p>
             <p class="fc-cred">Former IIT Research Scholar</p>
           </div>
         </div>
 
-        <!-- Card 2 – Chemistry -->
+        <!-- Chemistry — Neha Kapoor -->
         <div class="faculty-card fc-fade">
           <div class="fc-photo-wrap">
-            <img
-              class="fc-photo"
-              src="https://randomuser.me/api/portraits/women/39.jpg"
-              alt="Neha Kapoor"
-            />
-            <div class="fc-hover-overlay">
-              <span>View Profile</span>
-            </div>
+            <img class="fc-photo" src="./Images/teachers/teacher2.png" />
+            <div class="fc-hover-overlay"><span>View Profile</span></div>
           </div>
           <div class="fc-body">
             <span class="fc-subject fc-subject-chem">Chemistry</span>
             <h3 class="fc-name">Neha Kapoor</h3>
-            <p class="fc-exp">📅 10+ Years Teaching Experience</p>
+            <p class="fc-exp">10+ Years Teaching Experience</p>
             <p class="fc-cred">Mentored 500+ JEE &amp; NEET Students</p>
           </div>
         </div>
 
-        <!-- Card 3 – Mathematics -->
+        <!-- Mathematics — Rahul Verma -->
         <div class="faculty-card fc-fade">
           <div class="fc-photo-wrap">
             <img
               class="fc-photo"
-              src="https://randomuser.me/api/portraits/men/64.jpg"
+              src="./Images/teachers/teacher3.png"
               alt="Rahul Verma"
             />
-            <div class="fc-hover-overlay">
-              <span>View Profile</span>
-            </div>
+            <div class="fc-hover-overlay"><span>View Profile</span></div>
           </div>
           <div class="fc-body">
             <span class="fc-subject fc-subject-math">Mathematics</span>
             <h3 class="fc-name">Rahul Verma</h3>
-            <p class="fc-exp">📅 11+ Years Teaching Experience</p>
+            <p class="fc-exp">11+ Years Teaching Experience</p>
             <p class="fc-cred">Known for Concept-Based Teaching</p>
           </div>
         </div>
 
-        <!-- Card 4 – Biology -->
+        <!-- Biology — Dr. Sneha Iyer -->
         <div class="faculty-card fc-fade">
           <div class="fc-photo-wrap">
             <img
               class="fc-photo"
-              src="https://randomuser.me/api/portraits/women/57.jpg"
+              src="./Images/teachers/teacher4.png"
               alt="Dr. Sneha Iyer"
             />
-            <div class="fc-hover-overlay">
-              <span>View Profile</span>
-            </div>
+            <div class="fc-hover-overlay"><span>View Profile</span></div>
           </div>
           <div class="fc-body">
             <span class="fc-subject fc-subject-bio">Biology</span>
             <h3 class="fc-name">Dr. Sneha Iyer</h3>
-            <p class="fc-exp">📅 9+ Years Teaching Experience</p>
+            <p class="fc-exp">9+ Years Teaching Experience</p>
             <p class="fc-cred">NEET Specialist Faculty</p>
           </div>
         </div>
       </div>
-      <!-- /faculty-grid -->
     </section>
 
+    <!-- DNA 5: Slate → Midnight -->
     <div class="dna-divider-5">
       <svg viewBox="0 0 1200 200" preserveAspectRatio="none">
         <path
@@ -783,8 +812,10 @@
       </svg>
     </div>
 
+    <!-- ═══════════════════════════════════════
+         TESTIMONIALS — DiceBear Indian avatars
+    ═══════════════════════════════════════ -->
     <section class="testimonials-section" id="testimonials">
-      <!-- Trust badge -->
       <div class="testi-trust-badge">
         <span class="testi-trust-dot"></span>
         Trusted by 5,000+ students and parents across India
@@ -799,14 +830,9 @@
       </div>
 
       <div class="testi-grid">
-        <!-- Card 1 -->
         <div class="testi-card testi-fade">
           <div class="testi-top">
-            <img
-              class="testi-photo"
-              src="https://randomuser.me/api/portraits/men/32.jpg"
-              alt="Ankit Sharma"
-            />
+            <img class="testi-photo" src="./Images/parents/male1.png" />
             <div class="testi-meta">
               <span class="testi-name">Ankit Sharma</span>
               <span class="testi-child">Son — Class 11 JEE Aspirant</span>
@@ -820,12 +846,11 @@
           </p>
         </div>
 
-        <!-- Card 2 -->
         <div class="testi-card testi-fade">
           <div class="testi-top">
             <img
               class="testi-photo"
-              src="https://randomuser.me/api/portraits/women/44.jpg"
+              src="./Images/parents/female1.png"
               alt="Meera Patel"
             />
             <div class="testi-meta">
@@ -841,12 +866,11 @@
           </p>
         </div>
 
-        <!-- Card 3 -->
         <div class="testi-card testi-fade">
           <div class="testi-top">
             <img
               class="testi-photo"
-              src="https://randomuser.me/api/portraits/men/52.jpg"
+              src="./Images/parents/male2.png"
               alt="Rajiv Verma"
             />
             <div class="testi-meta">
@@ -862,12 +886,11 @@
           </p>
         </div>
 
-        <!-- Card 4 -->
         <div class="testi-card testi-fade">
           <div class="testi-top">
             <img
               class="testi-photo"
-              src="https://randomuser.me/api/portraits/women/68.jpg"
+              src="./Images/parents/female2.png"
               alt="Sunita Nair"
             />
             <div class="testi-meta">
@@ -883,14 +906,9 @@
           </p>
         </div>
 
-        <!-- Card 5 -->
         <div class="testi-card testi-fade">
           <div class="testi-top">
-            <img
-              class="testi-photo"
-              src="https://randomuser.me/api/portraits/men/76.jpg"
-              alt="Amit Kulkarni"
-            />
+            <img class="testi-photo" src="./Images/parents/male3.png" />
             <div class="testi-meta">
               <span class="testi-name">Amit Kulkarni</span>
               <span class="testi-child">Son — Dropper Batch</span>
@@ -904,12 +922,11 @@
           </p>
         </div>
 
-        <!-- Card 6 -->
         <div class="testi-card testi-fade">
           <div class="testi-top">
             <img
               class="testi-photo"
-              src="https://randomuser.me/api/portraits/women/55.jpg"
+              src="./Images/parents/female3.png"
               alt="Kavita Singh"
             />
             <div class="testi-meta">
@@ -925,9 +942,7 @@
           </p>
         </div>
       </div>
-      <!-- /testi-grid -->
 
-      <!-- Bottom stat strip -->
       <div class="testi-stats">
         <div class="testi-stat">
           <span class="testi-stat-num">5000+</span>
@@ -951,16 +966,7 @@
       </div>
     </section>
 
-    <!-- ================================================
-     ORDER:
-     .testimonials-section (midnight #060d1c)
-       ↓
-     .dna-divider-6   (midnight → warm dark)  ← ADD THIS
-       ↓
-     .faq-section     (warm dark #0e0c14)
-================================================ -->
-
-    <!-- DNA DIVIDER 6: Midnight Navy → Warm Dark (FAQ) -->
+    <!-- DNA 6: Midnight → Warm Dark -->
     <div class="dna-divider-6">
       <svg viewBox="0 0 1200 200" preserveAspectRatio="none">
         <path
@@ -974,7 +980,9 @@
       </svg>
     </div>
 
-    <!-- ======================== FAQ SECTION ======================== -->
+    <!-- ═══════════════════════════════════════
+         FAQ
+    ═══════════════════════════════════════ -->
     <section class="faq-section" id="faq">
       <div class="faq-header">
         <span class="faq-eyebrow">Got Questions?</span>
@@ -986,7 +994,6 @@
       </div>
 
       <div class="faq-container" id="faqContainer">
-        <!-- Q1 -->
         <div class="faq-item faq-fade">
           <button class="faq-question" aria-expanded="false">
             <span>How are students supported if they have doubts?</span>
@@ -1014,7 +1021,6 @@
           </div>
         </div>
 
-        <!-- Q2 -->
         <div class="faq-item faq-fade">
           <button class="faq-question" aria-expanded="false">
             <span>How large are the batches?</span>
@@ -1042,7 +1048,6 @@
           </div>
         </div>
 
-        <!-- Q3 -->
         <div class="faq-item faq-fade">
           <button class="faq-question" aria-expanded="false">
             <span>How do parents track their child's progress?</span>
@@ -1064,13 +1069,12 @@
           <div class="faq-answer">
             <p>
               Regular tests, performance reports, and progress discussions help
-              parents clearly see how their child is improving over time. You
-              are never left guessing about where your child stands.
+              parents clearly see how their child is improving. You are never
+              left guessing about where your child stands.
             </p>
           </div>
         </div>
 
-        <!-- Q4 -->
         <div class="faq-item faq-fade">
           <button class="faq-question" aria-expanded="false">
             <span
@@ -1096,13 +1100,11 @@
             <p>
               Our program focuses on structured preparation, consistent testing,
               and continuous feedback so students build strong concepts instead
-              of just memorizing solutions. The goal is genuine understanding,
-              not shortcuts.
+              of just memorizing solutions.
             </p>
           </div>
         </div>
 
-        <!-- Q5 -->
         <div class="faq-item faq-fade">
           <button class="faq-question" aria-expanded="false">
             <span>What if my child falls behind in a topic?</span>
@@ -1124,13 +1126,12 @@
           <div class="faq-answer">
             <p>
               Extra doubt sessions and revision support help students catch up
-              quickly. Teachers guide them until they regain confidence in the
-              subject — no student is left behind.
+              quickly. Teachers guide them until they regain confidence — no
+              student is left behind.
             </p>
           </div>
         </div>
 
-        <!-- Q6 -->
         <div class="faq-item faq-fade">
           <button class="faq-question" aria-expanded="false">
             <span>Do students receive exam strategy guidance?</span>
@@ -1151,14 +1152,13 @@
           </button>
           <div class="faq-answer">
             <p>
-              Yes. Along with academic preparation, students are trained in time
-              management, exam strategy, and mock test analysis to improve their
-              performance under real exam conditions.
+              Yes. Students are trained in time management, exam strategy, and
+              mock test analysis to improve performance under real exam
+              conditions.
             </p>
           </div>
         </div>
 
-        <!-- Q7 -->
         <div class="faq-item faq-fade">
           <button class="faq-question" aria-expanded="false">
             <span>Are mock tests included in the program?</span>
@@ -1181,12 +1181,11 @@
             <p>
               Yes. Students regularly take mock tests that simulate the real
               exam environment. Detailed analysis helps them identify strengths
-              and weaknesses so every test becomes a learning opportunity.
+              and weaknesses.
             </p>
           </div>
         </div>
 
-        <!-- Q8 -->
         <div class="faq-item faq-fade">
           <button class="faq-question" aria-expanded="false">
             <span>How do I know if this program is right for my child?</span>
@@ -1207,32 +1206,21 @@
           </button>
           <div class="faq-answer">
             <p>
-              You can speak with our academic counselors who will understand
-              your child's current preparation level and recommend the most
-              suitable program — no pressure, just honest guidance.
+              Speak with our academic counselors who will understand your
+              child's current level and recommend the most suitable program — no
+              pressure, just honest guidance.
             </p>
           </div>
         </div>
       </div>
-      <!-- /faq-container -->
 
-      <!-- Bottom CTA line -->
       <div class="faq-footer">
         <p>Still have questions? Our counselors are happy to guide you.</p>
         <button class="primary faq-cta-btn">Talk to a Counselor →</button>
       </div>
     </section>
 
-    <!-- ================================================
-     ORDER:
-     .faq-section       (#0e0c14 warm dark)
-       ↓
-     .dna-divider-7     (warm dark → CTA deep)   ← ADD THIS
-       ↓
-     .final-cta-section (#0a0614 deepest dark)
-================================================ -->
-
-    <!-- DNA DIVIDER 7: Warm Dark(FAQ) → CTA Deep -->
+    <!-- DNA 7: Warm Dark → CTA -->
     <div class="dna-divider-7">
       <svg viewBox="0 0 1200 200" preserveAspectRatio="none">
         <path
@@ -1246,32 +1234,25 @@
       </svg>
     </div>
 
-    <!-- ======================== FINAL CTA SECTION ======================== -->
+    <!-- ═══════════════════════════════════════
+         FINAL CTA
+    ═══════════════════════════════════════ -->
     <section class="final-cta-section" id="contact">
-      <!-- background orbs -->
       <div class="cta-orb cta-orb-1"></div>
       <div class="cta-orb cta-orb-2"></div>
       <div class="cta-orb cta-orb-3"></div>
 
       <div class="cta-inner cta-fade">
-        <!-- top eyebrow -->
         <span class="cta-eyebrow">Take the Next Step</span>
-
-        <!-- headline -->
         <h2 class="cta-headline">
           Give Your Child the Right Guidance<br class="cta-br" />
           for JEE &amp; NEET
         </h2>
-
-        <!-- supporting text -->
         <p class="cta-body">
           Every student needs the right system, mentorship, and practice to
-          succeed in competitive exams. Our programs are designed to provide
-          structured preparation, regular testing, and personal guidance so
-          students stay on the right path.
+          succeed. Our programs provide structured preparation, regular testing,
+          and personal guidance so students stay on the right path.
         </p>
-
-        <!-- CTA button -->
         <div class="cta-btn-wrap">
           <button class="cta-primary-btn">
             <span>Book Free Counseling</span>
@@ -1291,12 +1272,10 @@
             </svg>
           </button>
           <p class="cta-btn-sub">
-            Speak with our academic counselors to understand which program is
-            right for your child.
+            Speak with our counselors to understand which program is right for
+            your child.
           </p>
         </div>
-
-        <!-- trust strip -->
         <div class="cta-trust-strip">
           <span class="cta-trust-dot"></span>
           <span
@@ -1304,90 +1283,73 @@
             &amp; NEET.</span
           >
         </div>
-
-        <!-- mini stat row -->
         <div class="cta-mini-stats">
           <div class="cta-mini-stat">
-            <strong>1200+</strong>
-            <span>IIT / JEE Selections</span>
+            <strong>1200+</strong><span>IIT / JEE Selections</span>
           </div>
           <div class="cta-mini-sep"></div>
           <div class="cta-mini-stat">
-            <strong>96%</strong>
-            <span>JEE Mains Pass Rate</span>
+            <strong>96%</strong><span>JEE Mains Pass Rate</span>
           </div>
           <div class="cta-mini-sep"></div>
           <div class="cta-mini-stat">
-            <strong>12 Yrs</strong>
-            <span>Teaching Experience</span>
+            <strong>12 Yrs</strong><span>Teaching Experience</span>
           </div>
         </div>
       </div>
-      <!-- /cta-inner -->
     </section>
 
+    <!-- ═══════════════════════════════════════
+         FOOTER
+    ═══════════════════════════════════════ -->
     <footer class="footer" id="footer">
       <div class="footer-top"></div>
-
       <div class="footer-container">
-        <!-- BRAND -->
         <div class="footer-brand">
           <h2>Airva Coaching</h2>
           <p>
-            Helping serious JEE & NEET aspirants build strong concepts,
+            Helping serious JEE &amp; NEET aspirants build strong concepts,
             disciplined study systems, and exam confidence through structured
             preparation and expert mentorship.
           </p>
-
           <div class="footer-socials">
-            <a href="#">🌐</a>
-            <a href="#">📘</a>
-            <a href="#">📸</a>
-            <a href="#">▶</a>
+            <a href="#" aria-label="Website">🌐</a>
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Instagram">📸</a>
+            <a href="#" aria-label="YouTube">▶</a>
           </div>
         </div>
-
-        <!-- PROGRAMS -->
         <div class="footer-links">
           <h4>Programs</h4>
           <ul>
-            <li><a href="#">Class 11 Foundation</a></li>
-            <li><a href="#">Class 12 Target</a></li>
-            <li><a href="#">Dropper Batch</a></li>
+            <li><a href="#programs">Class 11 Foundation</a></li>
+            <li><a href="#programs">Class 12 Target</a></li>
+            <li><a href="#programs">Dropper Batch</a></li>
           </ul>
         </div>
-
-        <!-- RESOURCES -->
         <div class="footer-links">
           <h4>Resources</h4>
           <ul>
             <li><a href="#results">Results</a></li>
-            <li><a href="#features-section">Features</a></li>
+            <li><a href="#features">Features</a></li>
             <li><a href="#faculty">Faculty</a></li>
-            <li><a href="#process">How Our Program Works</a></li>
+            <li><a href="#process">How It Works</a></li>
             <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#faq">FAQ</a></li>
           </ul>
         </div>
-
-        <!-- CONTACT -->
         <div class="footer-contact">
           <h4>Contact Us</h4>
-
           <p>📍 Birpara, India</p>
           <p>📞 +91 70013 39282</p>
           <p>✉ contact@airvacoaching.com</p>
-
           <div class="footer-hours">
-            <span>Mon – Sat</span>
-            <span>9:00 AM – 7:00 PM</span>
+            <span>Mon – Sat &nbsp; 9:00 AM – 7:00 PM</span>
           </div>
         </div>
       </div>
-
       <div class="footer-bottom">
         <p>© 2026 Airva Coaching. All rights reserved.</p>
-
         <div class="footer-legal">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms</a>
