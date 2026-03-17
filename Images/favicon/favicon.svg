@@ -1,18 +1,20 @@
 <svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#5E35B1"/>
-      <stop offset="100%" stop-color="#7B1FA2"/>
-    </linearGradient>
-    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <radialGradient id="bgGrad" cx="32" cy="32" r="32">
       <stop offset="0%" stop-color="#1A237E"/>
-      <stop offset="100%" stop-color="#283593"/>
+      <stop offset="100%" stop-color="#000"/>
+    </radialGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B388FF"/>
+      <stop offset="100%" stop-color="#00E5FF"/>
     </linearGradient>
   </defs>
-  <!-- Left leg (purple) -->
-  <polygon points="16,56 20,8 28,8 24,56" fill="url(#purpleGrad)"/>
-  <!-- Right leg (blue) -->
-  <polygon points="40,56 36,8 44,8 48,56" fill="url(#blueGrad)"/>
-  <!-- Crossbar (neon accent) -->
-  <rect x="22" y="26" width="20" height="8" fill="#00E5FF" rx="2"/>
+  <!-- Circular background -->
+  <circle cx="32" cy="32" r="30" fill="url(#bgGrad)" stroke="none"/>
+  <!-- Left leg (meets at top) -->
+  <path d="M20,48 L32,16" stroke="url(#lineGrad)" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <!-- Right leg (meets at top) -->
+  <path d="M44,48 L32,16" stroke="url(#lineGrad)" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <!-- Crossbar -->
+  <path d="M24,34 L40,34" stroke="#00E5FF" stroke-width="4" stroke-linecap="round" fill="none"/>
 </svg>
