@@ -1,1 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><g clip-path="url(#SvgjsClipPath1317)"><rect width="1000" height="1000" fill="#000000"></rect><g transform="matrix(62.5,0,0,62.5,0,0)"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16"><image width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB00lEQVR4AXSTvW4TQRSFv5nNJmYd/8QSKGEjIMYOhB+RAtHR0/sdeAN4CHgFqEGiAIkmFUJISEkbJBOgsZCAghTEG4xCdvdyZ8BgkvFo5+fOnHPu2buzdmEplWN9MZXmn/3W4pIsTMRHsZZAEyNYAZ0QIsTomnALClhlFMoWCiWXXkzCfIICpc8ozN/o0Lq1jlSCMC85/WTG0r7To323R3Vt2b+OZxwZpgrMpicxrQaH6j251maaQlDAilC7sgK5pRwVNNfaqA6hFhQQY5hf75J/+8Heqz7J6lmoVkL8KUWMIxqdFfa3Bww330F8gtr50+pCfegzqWQng/F6Lj1F1GyQq32SKmVuSK52iRxZv5AqjaFhB/XLHXKJaN28zpnbPSgj6pdWtSTK1vqg01jhPwcugTuod7Xq2U+GW32yzbccfPxKNV1GkopyHcp1h+SfAyOl7ghlHFO5eIFs+wODew8Z3H/AlycbFLMJtc45xChMZdzo+l8Hvw8gnpth7+UWuxuvFVZ6wujNe3afvyA6KPx1EAIOvJre4Xx/xKfHT8n6fYUZIreXfefzo2cMd3ZU1FlwHd+sH/1gKDQyjiYWW1qfrVCs/ldYTWq0sIcWXWvgOfALAAD//7T44Q4AAAAGSURBVAMARMulUIf1xP0AAAAASUVORK5CYII="></image></svg></g></g><defs><clipPath id="SvgjsClipPath1317"><rect width="1000" height="1000" x="0" y="0" rx="500" ry="500"></rect></clipPath></defs></svg>
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5E35B1"/>
+      <stop offset="100%" stop-color="#7B1FA2"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A237E"/>
+      <stop offset="100%" stop-color="#283593"/>
+    </linearGradient>
+  </defs>
+  <!-- Left leg (purple) -->
+  <polygon points="16,56 20,8 28,8 24,56" fill="url(#purpleGrad)"/>
+  <!-- Right leg (blue) -->
+  <polygon points="40,56 36,8 44,8 48,56" fill="url(#blueGrad)"/>
+  <!-- Crossbar (neon accent) -->
+  <rect x="22" y="26" width="20" height="8" fill="#00E5FF" rx="2"/>
+</svg>
